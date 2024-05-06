@@ -1,0 +1,23 @@
+.header_main{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 3.2rem;
+    background-color: #5a96ff;
+    color: black;
+    justify-content: flex-end;
+}
+
+.header_links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_link{
+    margin: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-size: 100%;
+    font-family: "Courier New";
+}
