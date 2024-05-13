@@ -1,23 +1,203 @@
 .header_main{
     display: flex;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 7;
     width: 100%;
     height: 3.2rem;
     background-color: #5a96ff;
     color: black;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .header_links{
+    display: inline-block;
+    margin-top: 0.8rem;
+    justify-items: right;
+}
+
+.header_logo{
     display: flex;
-    justify-content: space-around;
+    z-index: 70;
+    justify-content: left;
 }
 
 .header_link{
     margin: 0.8rem;
     text-decoration: none;
     font-weight: bold;
-    color:black;
+    color:whitesmoke;
     font-size: 100%;
     font-family: "Courier New";
+}
+
+.header_link:hover{
+    text-decoration: none;
+    border-bottom: 3px whitesmoke solid;
+}
+
+.main_page_card1{
+    margin-top: -1.5rem;
+    justify-content: center;
+    background:
+            linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), url("https://s3-alpha-sig.figma.com/img/e84c/93ce/e5f272ee3c2b930d66e76e52a1ce17c2?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oqtRDzu3brlbGsiu4Th64uUaG2jV9~YyL70~vrG4D~iAJHYHiOWe9wIkFK~MOCq7h5qDHseBPbHt4-l37BpeOhK2KJmp47y2YdH~~CMXpdKSpICQgaw9HGgIppnHe8UA9DstCeEPZ862o~l~CgAKIS5iWq5dWKluNZTMsb0XCWU~caK7CQQZ4yV06R8GvV93J-DOz121vLSoK30shA-4EXI2LXSFcr41gTZD4I2H2euZszSZHPg5jsUCODAj1btAv~7Gk7eFLE9Wz5fMIxLqoX8dXZY3vygY4Xlgm~M87yBYNdsh3JxzcQzh1ePbule04sdYjaIXbOivnBKXTYpcng__") -0px -100px;
+    background-size: cover;
+    background-origin: content-box;
+    position: relative;
+    min-height: 600px;
+}
+
+.main_footer{
+    display: flex;
+    position: fixed;
+    z-index: 7;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height: 5%;
+    background-color: rgba(0, 28, 74, 1);
+    border-top: 1px solid whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_info{
+    display: flex;
+    font-family: SansSerif;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+.homepage_body{
+    margin:0;
+    font-family: "Century Gothic";
+    color:#1d1d1d;
+    background: #c4d0dc;
+}
+
+.homepage_h2{
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+}
+
+.homepage_p{
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+}
+
+.section_image{
+    padding: 40px 0;
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://s3-alpha-sig.figma.com/img/e84c/93ce/e5f272ee3c2b930d66e76e52a1ce17c2?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oqtRDzu3brlbGsiu4Th64uUaG2jV9~YyL70~vrG4D~iAJHYHiOWe9wIkFK~MOCq7h5qDHseBPbHt4-l37BpeOhK2KJmp47y2YdH~~CMXpdKSpICQgaw9HGgIppnHe8UA9DstCeEPZ862o~l~CgAKIS5iWq5dWKluNZTMsb0XCWU~caK7CQQZ4yV06R8GvV93J-DOz121vLSoK30shA-4EXI2LXSFcr41gTZD4I2H2euZszSZHPg5jsUCODAj1btAv~7Gk7eFLE9Wz5fMIxLqoX8dXZY3vygY4Xlgm~M87yBYNdsh3JxzcQzh1ePbule04sdYjaIXbOivnBKXTYpcng__");
+}
+
+.section_text{
+    padding: 20px 0;
+    background: #fff;
+    position: relative;
+}
+
+.section_text:before{
+    padding: 40px 0;
+    content:"";
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    rotate: -1deg;
+    translate: -50% -50%;
+}
+
+.main_h1{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+}
+
+.description_p{
+    text-align: center;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+}
+
+.card_description{
+    margin-top: -1rem;
+    background-color: black;
+}
+
+.price_page{
+    margin-top: 1rem;
+}
+
+.price_button{
+    z-index: 1;
+}
+
+.contacts_page{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 50px;
+}
+
+.contacts_back{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #5a96ff;
+    rotate: 1rad;
+    translate: 50%;
+}
+
+.contacts_first{
+    z-index:5;
+    font-family: "Century Gothic";
+}
+
+.contacts_second{
+    margin-top: 1rem;
+    z-index:5;
+    font-family: "Century Gothic";
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-family: "Century Gothic";
+}
+
+a:hover{
+    border-bottom: 3px whitesmoke solid;
 }
